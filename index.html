@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>سِمة | صمّمها بطريقتك</title>
+
     <meta
         name="description"
-        content="سِمة - منصة لتصميم وشراء الملابس بتصاميمك الخاصة."
+        content="سِمة - صمم تيشيرتك بطريقتك وشاهد التصميم مباشرة."
     >
 
     <link rel="stylesheet" href="style.css">
@@ -15,535 +16,719 @@
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+<header class="site-header">
 
-    <header class="header">
-        <div class="container header-inner">
+    <div class="header-inner">
 
-            <a href="#home" class="logo" data-page="home">
-                سِمة
-                <span>SIMА</span>
-            </a>
+        <a href="#home" class="brand" data-page="home">
+            <strong>سِمة</strong>
+            <span>SIMA</span>
+        </a>
 
-            <nav class="nav">
-                <button data-page="home">الرئيسية</button>
-                <button data-page="shop">المتجر</button>
-                <button data-page="designer">صمّم تيشيرتك</button>
-                <button data-page="about">من نحن</button>
-            </nav>
+        <nav class="main-nav">
 
-            <div class="header-actions">
-                <button class="icon-btn" data-page="account" aria-label="الحساب">
-                    👤
+            <button data-page="home">
+                الرئيسية
+            </button>
+
+            <button data-page="shop">
+                المتجر
+            </button>
+
+            <button data-page="designer">
+                صمّم
+            </button>
+
+            <button data-page="about">
+                من نحن
+            </button>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <button
+                class="header-icon"
+                data-page="account"
+                aria-label="الحساب"
+            >
+                👤
+            </button>
+
+            <button
+                class="header-icon cart-icon"
+                data-page="cart"
+                aria-label="السلة"
+            >
+                🛒
+                <span id="cartCount">0</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+<!-- =====================================================
+     HOME
+===================================================== -->
+
+<section id="home" class="page active">
+
+    <div class="hero">
+
+        <div class="hero-content">
+
+            <span class="small-label">
+                SIMA DESIGN STUDIO
+            </span>
+
+            <h1>
+                صمّم الشيء
+                <span>اللي يمثلك.</span>
+            </h1>
+
+            <p>
+                ارفع تصميمك، حرّكه بيدك، كبّره أو صغّره،
+                وشوف كيف بيطلع على التيشيرت قبل ما تطلبه.
+            </p>
+
+            <div class="hero-actions">
+
+                <button
+                    class="btn btn-primary"
+                    data-page="designer"
+                >
+                    ابدأ التصميم
                 </button>
 
-                <button class="cart-btn" data-page="cart">
-                    🛒
-                    <span id="cartCount">0</span>
+                <button
+                    class="btn btn-light"
+                    data-page="shop"
+                >
+                    تصفح المتجر
                 </button>
+
             </div>
 
         </div>
-    </header>
 
 
-    <!-- ================= MAIN ================= -->
+        <div class="hero-visual">
 
-    <main id="app">
+            <div class="hero-shirt">
 
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/White_tshirt.png"
+                    alt="تيشيرت سِمة"
+                >
 
-        <!-- ================= HOME ================= -->
-
-        <section id="home" class="page active">
-
-            <div class="hero container">
-
-                <div class="hero-content">
-
-                    <span class="eyebrow">
-                        صمّمها بطريقتك
-                    </span>
-
-                    <h1>
-                        فكرتك تبدأ من هنا.
-                        <span>وسِمة تطبعها.</span>
-                    </h1>
-
-                    <p>
-                        صمّم تيشيرتك بالطريقة اللي تعجبك،
-                        أضف لمستك الخاصة، وشوف تصميمك قبل الطلب.
-                    </p>
-
-                    <div class="hero-buttons">
-
-                        <button
-                            class="primary-btn"
-                            data-page="designer"
-                        >
-                            ابدأ التصميم
-                        </button>
-
-                        <button
-                            class="secondary-btn"
-                            data-page="shop"
-                        >
-                            تصفح المتجر
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <div class="hero-product">
-
-                    <div class="shirt-display">
-
-                        <div class="shirt">
-                            <div class="shirt-print">
-                                SIMA
-                            </div>
-                        </div>
-
-                    </div>
-
+                <div class="hero-print">
+                    SIMA
                 </div>
 
             </div>
 
+        </div>
 
-            <!-- FEATURES -->
+    </div>
 
-            <div class="features container">
 
-                <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3>صمّم بنفسك</h3>
-                    <p>
-                        أضف فكرتك وتصميمك الخاص.
-                    </p>
-                </div>
+    <div class="home-section">
 
-                <div class="feature-card">
-                    <div class="feature-icon">👕</div>
-                    <h3>معاينة التصميم</h3>
-                    <p>
-                        شوف شكل التصميم قبل الطلب.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🚚</div>
-                    <h3>يوصلك لبابك</h3>
-                    <p>
-                        نجهز طلبك ونرسله لك.
-                    </p>
-                </div>
-
-            </div>
-
-
-            <!-- PRODUCTS PREVIEW -->
-
-            <section class="section container">
-
-                <div class="section-heading">
-
-                    <div>
-                        <span class="eyebrow">اكتشف</span>
-                        <h2>منتجات سِمة</h2>
-                    </div>
-
-                    <button
-                        class="text-btn"
-                        data-page="shop"
-                    >
-                        عرض الكل →
-                    </button>
-
-                </div>
-
-                <div
-                    id="featuredProducts"
-                    class="products-grid"
-                ></div>
-
-            </section>
-
-        </section>
-
-
-        <!-- ================= SHOP ================= -->
-
-        <section id="shop" class="page">
-
-            <div class="page-header container">
-
-                <span class="eyebrow">
-                    متجر سِمة
-                </span>
-
-                <h1>اكتشف التصاميم</h1>
-
-                <p>
-                    تصاميم جاهزة تقدر تختار منها،
-                    أو ابدأ تصميمك الخاص.
-                </p>
-
-            </div>
-
-            <div
-                id="shopProducts"
-                class="products-grid container"
-            ></div>
-
-        </section>
-
-
-        <!-- ================= DESIGNER ================= -->
-
-        <section id="designer" class="page">
-
-            <div class="page-header container">
-
-                <span class="eyebrow">
-                    SIMA DESIGNER
-                </span>
-
-                <h1>صمّم تيشيرتك</h1>
-
-                <p>
-                    اختر لون التيشيرت وارفع تصميمك وشوف المعاينة.
-                </p>
-
-            </div>
-
-
-            <div class="designer-layout container">
-
-                <!-- PREVIEW -->
-
-                <div class="designer-preview">
-
-                    <div
-                        id="previewShirt"
-                        class="preview-shirt"
-                    >
-
-                        <div
-                            id="designPreview"
-                            class="design-preview"
-                        >
-                            تصميمك
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- CONTROLS -->
-
-                <div class="designer-controls">
-
-                    <div class="control-card">
-
-                        <h3>لون التيشيرت</h3>
-
-                        <div class="color-options">
-
-                            <button
-                                class="color-option active"
-                                data-color="#ffffff"
-                                style="background:#ffffff"
-                            ></button>
-
-                            <button
-                                class="color-option"
-                                data-color="#111111"
-                                style="background:#111111"
-                            ></button>
-
-                            <button
-                                class="color-option"
-                                data-color="#174734"
-                                style="background:#174734"
-                            ></button>
-
-                            <button
-                                class="color-option"
-                                data-color="#d9d9d9"
-                                style="background:#d9d9d9"
-                            ></button>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="control-card">
-
-                        <h3>التصميم</h3>
-
-                        <label
-                            class="upload-box"
-                            for="designUpload"
-                        >
-
-                            <span>＋</span>
-
-                            <strong>
-                                ارفع تصميمك
-                            </strong>
-
-                            <small>
-                                PNG أو JPG
-                            </small>
-
-                        </label>
-
-                        <input
-                            id="designUpload"
-                            type="file"
-                            accept="image/png,image/jpeg,image/webp"
-                            hidden
-                        >
-
-                    </div>
-
-
-                    <div class="control-card">
-
-                        <h3>حجم التصميم</h3>
-
-                        <input
-                            id="designSize"
-                            type="range"
-                            min="40"
-                            max="180"
-                            value="100"
-                        >
-
-                    </div>
-
-
-                    <div class="control-card">
-
-                        <h3>اسم التصميم</h3>
-
-                        <input
-                            id="designName"
-                            class="text-input"
-                            type="text"
-                            placeholder="مثال: تخرج 2026"
-                            maxlength="40"
-                        >
-
-                    </div>
-
-
-                    <button
-                        id="addCustomDesign"
-                        class="primary-btn full"
-                    >
-                        إضافة التصميم للسلة
-                    </button>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= PRODUCT DETAILS ================= -->
-
-        <section id="product" class="page">
-
-            <div
-                id="productDetails"
-                class="product-details container"
-            ></div>
-
-        </section>
-
-
-        <!-- ================= CART ================= -->
-
-        <section id="cart" class="page">
-
-            <div class="page-header container">
-
-                <span class="eyebrow">
-                    طلبك
-                </span>
-
-                <h1>سلة المشتريات</h1>
-
-            </div>
-
-            <div class="container">
-
-                <div
-                    id="cartItems"
-                    class="cart-items"
-                ></div>
-
-                <div
-                    id="cartSummary"
-                    class="cart-summary"
-                ></div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= ACCOUNT ================= -->
-
-        <section id="account" class="page">
-
-            <div class="account-container container">
-
-                <div class="account-card">
-
-                    <span class="eyebrow">
-                        SIMA ACCOUNT
-                    </span>
-
-                    <h1>حسابك في سِمة</h1>
-
-                    <p>
-                        سجّل دخولك أو أنشئ حسابًا جديدًا.
-                    </p>
-
-                    <input
-                        id="accountName"
-                        class="text-input"
-                        type="text"
-                        placeholder="الاسم"
-                    >
-
-                    <input
-                        id="accountEmail"
-                        class="text-input"
-                        type="email"
-                        placeholder="البريد الإلكتروني"
-                    >
-
-                    <button
-                        id="loginBtn"
-                        class="primary-btn full"
-                    >
-                        دخول
-                    </button>
-
-                    <div
-                        id="accountMessage"
-                        class="account-message"
-                    ></div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= ABOUT ================= -->
-
-        <section id="about" class="page">
-
-            <div class="about container">
-
-                <span class="eyebrow">
-                    ABOUT SIMA
-                </span>
-
-                <h1>
-                    سِمة ليست مجرد متجر.
-                </h1>
-
-                <p>
-                    سِمة منصة تهدف إلى إعطاء كل شخص مساحة
-                    يصمم فيها قطعته بطريقته الخاصة.
-                </p>
-
-                <div class="about-grid">
-
-                    <div>
-                        <h3>صمّم</h3>
-                        <p>
-                            حول فكرتك إلى تصميم قابل للارتداء.
-                        </p>
-                    </div>
-
-                    <div>
-                        <h3>اطلب</h3>
-                        <p>
-                            شاهد التصميم ثم أضفه إلى سلتك.
-                        </p>
-                    </div>
-
-                    <div>
-                        <h3>شارك</h3>
-                        <p>
-                            مستقبلًا تستطيع عرض تصاميمك
-                            على مجتمع سِمة.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer class="footer">
-
-        <div class="container footer-inner">
+        <div class="section-title">
 
             <div>
-                <strong>سِمة</strong>
+                <span class="small-label">
+                    SHOP
+                </span>
+
+                <h2>
+                    تصاميم مختارة
+                </h2>
+            </div>
+
+            <button
+                class="text-button"
+                data-page="shop"
+            >
+                عرض المتجر ←
+            </button>
+
+        </div>
+
+        <div
+            id="featuredProducts"
+            class="products-grid"
+        ></div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SHOP
+===================================================== -->
+
+<section id="shop" class="page">
+
+    <div class="page-top">
+
+        <span class="small-label">
+            SIMA STORE
+        </span>
+
+        <h1>
+            متجر سِمة
+        </h1>
+
+        <p>
+            اختار تصميم جاهز أو اصنع تصميمك بنفسك.
+        </p>
+
+    </div>
+
+    <div
+        id="shopProducts"
+        class="products-grid"
+    ></div>
+
+</section>
+
+
+<!-- =====================================================
+     DESIGNER
+===================================================== -->
+
+<section id="designer" class="page designer-page">
+
+    <div class="page-top designer-heading">
+
+        <div>
+
+            <span class="small-label">
+                SIMA DESIGNER
+            </span>
+
+            <h1>
+                صمّم تيشيرتك
+            </h1>
+
+            <p>
+                حرّك التصميم بإصبعك مباشرة على التيشيرت.
+            </p>
+
+        </div>
+
+        <button
+            id="openAiButton"
+            class="ai-button"
+        >
+            <span>✦</span>
+            صمّم بالذكاء الاصطناعي
+        </button>
+
+    </div>
+
+
+    <div class="designer">
+
+        <!-- ================= PREVIEW ================= -->
+
+        <div class="preview-column">
+
+            <div
+                id="mockupStage"
+                class="mockup-stage"
+            >
+
+                <div class="stage-badge">
+                    معاينة مباشرة
+                </div>
+
+                <img
+                    id="shirtImage"
+                    class="shirt-image"
+                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/White_tshirt.png"
+                    alt="معاينة التيشيرت"
+                >
+
+                <!-- DESIGN LAYER -->
+
+                <div
+                    id="designLayer"
+                    class="design-layer"
+                >
+
+                    <img
+                        id="uploadedDesign"
+                        src=""
+                        alt="التصميم"
+                    >
+
+                    <div
+                        id="designPlaceholder"
+                        class="design-placeholder"
+                    >
+                        ارفع تصميمك
+                    </div>
+
+                </div>
+
+                <div
+                    id="touchHint"
+                    class="touch-hint"
+                >
+                    👆 اسحب التصميم • 🤏 كبّر وصغّر
+                </div>
+
+            </div>
+
+
+            <div class="preview-help">
+
+                <span>
+                    👆 سحب
+                </span>
+
+                <span>
+                    🤏 تكبير وتصغير
+                </span>
+
+                <span>
+                    🔄 تدوير
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CONTROLS ================= -->
+
+        <aside class="designer-panel">
+
+
+            <!-- UPLOAD -->
+
+            <div class="panel-card">
+
+                <div class="panel-title">
+                    <strong>
+                        1. أضف تصميمك
+                    </strong>
+
+                    <span>
+                        اختياري
+                    </span>
+                </div>
+
+                <label
+                    for="designUpload"
+                    class="upload-area"
+                >
+
+                    <span class="upload-icon">
+                        ＋
+                    </span>
+
+                    <strong>
+                        ارفع صورة
+                    </strong>
+
+                    <small>
+                        PNG / JPG / WEBP
+                    </small>
+
+                </label>
+
+                <input
+                    id="designUpload"
+                    type="file"
+                    accept="image/png,image/jpeg,image/webp"
+                    hidden
+                >
+
+            </div>
+
+
+            <!-- AI -->
+
+            <div class="panel-card ai-card">
+
+                <div class="panel-title">
+
+                    <strong>
+                        2. صمّم بالذكاء الاصطناعي
+                    </strong>
+
+                    <span>
+                        AI
+                    </span>
+
+                </div>
+
                 <p>
-                    صمّمها بطريقتك.
+                    اكتب فكرتك، مثل:
+                    "نمر عربي بأسلوب سايبربنك باللون الأخضر".
                 </p>
+
+                <textarea
+                    id="aiPrompt"
+                    class="ai-input"
+                    placeholder="اكتب وصف التصميم هنا..."
+                    maxlength="500"
+                ></textarea>
+
+                <button
+                    id="generateAiButton"
+                    class="btn btn-ai"
+                >
+                    ✦ إنشاء التصميم
+                </button>
+
+                <div
+                    id="aiStatus"
+                    class="ai-status"
+                ></div>
+
             </div>
 
-            <div class="footer-links">
 
-                <button data-page="home">
-                    الرئيسية
-                </button>
+            <!-- COLORS -->
 
-                <button data-page="shop">
-                    المتجر
-                </button>
+            <div class="panel-card">
 
-                <button data-page="designer">
-                    التصميم
-                </button>
+                <div class="panel-title">
 
-                <button data-page="about">
-                    من نحن
-                </button>
+                    <strong>
+                        3. لون التيشيرت
+                    </strong>
+
+                </div>
+
+                <div class="shirt-colors">
+
+                    <button
+                        class="shirt-color active"
+                        data-shirt="white"
+                        style="background:#ffffff"
+                        aria-label="أبيض"
+                    ></button>
+
+                    <button
+                        class="shirt-color"
+                        data-shirt="black"
+                        style="background:#111111"
+                        aria-label="أسود"
+                    ></button>
+
+                    <button
+                        class="shirt-color"
+                        data-shirt="green"
+                        style="background:#173f31"
+                        aria-label="أخضر"
+                    ></button>
+
+                    <button
+                        class="shirt-color"
+                        data-shirt="gray"
+                        style="background:#b9b9b9"
+                        aria-label="رمادي"
+                    ></button>
+
+                </div>
 
             </div>
+
+
+            <!-- INFO -->
+
+            <div class="panel-card">
+
+                <div class="panel-title">
+
+                    <strong>
+                        4. اسم التصميم
+                    </strong>
+
+                </div>
+
+                <input
+                    id="designName"
+                    class="text-input"
+                    type="text"
+                    maxlength="60"
+                    placeholder="مثال: تخرج 2026"
+                >
+
+            </div>
+
+
+            <!-- RESET -->
+
+            <button
+                id="resetDesign"
+                class="reset-button"
+            >
+                إعادة ضبط التصميم
+            </button>
+
+
+            <!-- ADD -->
+
+            <button
+                id="addDesignToCart"
+                class="btn btn-primary add-design-button"
+            >
+                إضافة التصميم للسلة
+                <span>
+                    119 ر.س
+                </span>
+            </button>
+
+        </aside>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PRODUCT
+===================================================== -->
+
+<section id="product" class="page">
+
+    <div
+        id="productDetails"
+        class="product-details"
+    ></div>
+
+</section>
+
+
+<!-- =====================================================
+     CART
+===================================================== -->
+
+<section id="cart" class="page">
+
+    <div class="page-top">
+
+        <span class="small-label">
+            YOUR CART
+        </span>
+
+        <h1>
+            سلة المشتريات
+        </h1>
+
+    </div>
+
+    <div
+        id="cartItems"
+        class="cart-list"
+    ></div>
+
+    <div
+        id="cartSummary"
+        class="cart-summary"
+    ></div>
+
+</section>
+
+
+<!-- =====================================================
+     ACCOUNT
+===================================================== -->
+
+<section id="account" class="page">
+
+    <div class="account-box">
+
+        <span class="small-label">
+            SIMA ACCOUNT
+        </span>
+
+        <h1>
+            حسابك في سِمة
+        </h1>
+
+        <p>
+            سجّل دخولك لحفظ تصاميمك وطلباتك.
+        </p>
+
+        <input
+            id="accountName"
+            class="text-input"
+            placeholder="الاسم"
+        >
+
+        <input
+            id="accountEmail"
+            class="text-input"
+            type="email"
+            placeholder="البريد الإلكتروني"
+        >
+
+        <button
+            id="loginButton"
+            class="btn btn-primary"
+        >
+            تسجيل الدخول
+        </button>
+
+        <div
+            id="accountMessage"
+            class="account-message"
+        ></div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section id="about" class="page">
+
+    <div class="about-content">
+
+        <span class="small-label">
+            ABOUT SIMA
+        </span>
+
+        <h1>
+            فكرتك.
+            <br>
+            تصميمك.
+            <br>
+            سِمة.
+        </h1>
+
+        <p>
+            سِمة منصة لتصميم الملابس بطريقة مختلفة.
+            الفكرة بسيطة: أنت صاحب التصميم،
+            ونحن نحول فكرتك إلى قطعة قابلة للارتداء.
+        </p>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-inner">
+
+        <div>
+            <strong>سِمة</strong>
+            <p>
+                صمّمها بطريقتك.
+            </p>
+        </div>
+
+        <div class="footer-links">
+
+            <button data-page="home">
+                الرئيسية
+            </button>
+
+            <button data-page="shop">
+                المتجر
+            </button>
+
+            <button data-page="designer">
+                المصمم
+            </button>
+
+            <button data-page="about">
+                من نحن
+            </button>
 
         </div>
 
-        <div class="copyright">
-            © 2026 سِمة — جميع الحقوق محفوظة
-        </div>
+    </div>
 
-    </footer>
+    <div class="copyright">
+        © 2026 SIMA
+    </div>
+
+</footer>
 
 
-    <script src="app.js"></script>
+<!-- =====================================================
+     AI MODAL
+===================================================== -->
+
+<div
+    id="aiModal"
+    class="modal"
+    aria-hidden="true"
+>
+
+    <div class="modal-box">
+
+        <button
+            id="closeAiModal"
+            class="modal-close"
+        >
+            ×
+        </button>
+
+        <span class="small-label">
+            SIMA AI
+        </span>
+
+        <h2>
+            وش تتخيل؟
+        </h2>
+
+        <p>
+            اكتب فكرتك وسنجهزها لك كمفهوم تصميم.
+        </p>
+
+        <textarea
+            id="modalAiPrompt"
+            class="ai-input"
+            placeholder="مثال: صقر سعودي بأسلوب مستقبلي..."
+        ></textarea>
+
+        <button
+            id="modalGenerate"
+            class="btn btn-ai"
+        >
+            ✦ إنشاء
+        </button>
+
+        <div
+            id="modalAiResult"
+            class="modal-result"
+        ></div>
+
+    </div>
+
+</div>
+
+
+<div
+    id="toast"
+    class="toast"
+></div>
+
+
+<script src="app.js"></script>
 
 </body>
 </html>
